@@ -29,6 +29,8 @@
  
 unit Quick.Parameters;
 
+{$M+}
+
 {$i QuickLib.inc}
 
 interface

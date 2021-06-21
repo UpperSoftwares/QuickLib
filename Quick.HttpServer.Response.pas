@@ -29,6 +29,8 @@
 
 unit Quick.HttpServer.Response;
 
+{$M+}
+
 {$i QuickLib.inc}
 
 interface

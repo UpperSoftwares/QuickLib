@@ -21,6 +21,14 @@
      ***************************************************************************
 }
 
+{$ifdef QUICK_WARNOFF}
+	{$WARNINGS OFF}
+{$endif}
+
+{$ifdef QUICK_HINTSOFF}
+	{$HINTS OFF}
+{$endif}
+
 {$ifdef FPC}
   {$MODE DELPHI}
 
@@ -170,8 +178,8 @@
 //Debug library
 {$IFDEF DEBUG}
   {.$DEFINE DEBUG_SERIALIZER}
-  {$DEFINE DEBUG_HTTPSERVER}
-  {$DEFINE DEBUG_OBJPOOL}
+  {.$DEFINE DEBUG_HTTPSERVER}
+  {.$DEFINE DEBUG_OBJPOOL}
   {.$DEFINE DEBUG_PARAMETERS}
 {$ENDIF}
 

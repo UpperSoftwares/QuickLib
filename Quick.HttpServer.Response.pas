@@ -64,6 +64,7 @@ type
     property ContentType : string read GetContentType write SetContentType;
   end;
 
+  {$M+}
   THttpResponse = class(TInterfacedObject,IHttpResponse)
   private
     fHeaders : TPairList;
@@ -96,6 +97,7 @@ type
     property ContentText : string read GetContentText write SetContentText;
     property ContentType : string read GetContentType write SetContentType;
   end;
+  {$M-}
 
 implementation
 

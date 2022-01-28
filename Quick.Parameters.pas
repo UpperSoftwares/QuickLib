@@ -125,6 +125,7 @@ type
   end;
   {$ENDIF}
 
+  {$M+}
   TParameters = class
   type
     TValueType = (vtString, vtInteger, vtFloat, vtBoolean, vtEnumeration);
@@ -190,6 +191,7 @@ type
     property Help : Boolean read fHelp write fHelp;
     function ExistsParam(const aParam : string): Boolean; overload;
   end;
+  {$M-}
 
   TServiceParameters = class(TParameters)
   private
